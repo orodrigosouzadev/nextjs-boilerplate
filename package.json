@@ -9,9 +9,11 @@
     "lint": "next lint --max-warnings=0",
     "test": "jest",
     "test:watch": "npm test -- --watch",
+    "test:ci": "jest --runInBand --bail --passWithNoTests",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "generate": "plop --plopfile ./generators/plopfile.js"
   },
   "lint-staged": {
     "src/**/*": [
@@ -58,6 +60,7 @@
     "jest-environment-jsdom": "^29.6.1",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^13.2.3",
+    "plop": "^3.1.2",
     "prettier": "3.0.0",
     "storybook": "^7.1.1"
   }
