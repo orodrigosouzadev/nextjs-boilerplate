@@ -9,6 +9,7 @@
     "lint": "next lint --max-warnings=0",
     "test": "jest",
     "test:watch": "npm test -- --watch",
+    "test:ci": "jest --runInBand --bail --passWithNoTests",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
